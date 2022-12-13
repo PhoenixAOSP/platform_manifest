@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Copyright (c) 2022, PhoenixAOSP.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<manifest>
+  <remote name="github/PhoenixAOSP"
+          fetch="https://github.com/PhoenixAOSP"
+          revision="refs/heads/Tangelo" />
+
+  <!-- Remove Projects -->
+  <remove-project name="device/google/barbet" />
+  <remove-project name="device/google/barbet-sepolicy" />
+  <remove-project name="device/google/bluejay" />
+  <remove-project name="device/google/bluejay-sepolicy" />
+  <remove-project name="device/google/bluejay-kernel" />
+  <remove-project name="device/google/bramble" />
+  <remove-project name="device/google/bramble-sepolicy" />
+  <remove-project name="device/google/coral" />
+  <remove-project name="device/google/coral-kernel" />
+  <remove-project name="device/google/coral-sepolicy" />
+  <remove-project name="device/google/gs101" />
+  <remove-project name="device/google/gs101-sepolicy" />
+  <remove-project name="device/google/gs201" />
+  <remove-project name="device/google/gs201-sepolicy" />
+  <remove-project name="device/google/gs-common" />
+  <remove-project name="device/google/pantah" />
+  <remove-project name="device/google/pantah-sepolicy" />
+  <remove-project name="device/google/pantah-kernel" />
+  <remove-project name="device/google/raviole" />
+  <remove-project name="device/google/raviole-kernel" />
+  <remove-project name="device/google/redbull" />
+  <remove-project name="device/google/redbull-kernel" />
+  <remove-project name="device/google/redbull-sepolicy" />
+  <remove-project name="device/google/redfin" />
+  <remove-project name="device/google/redfin-sepolicy" />
+  <remove-project name="device/google/sunfish" />
+  <remove-project name="device/google/sunfish-kernel" />
+  <remove-project name="device/google/sunfish-sepolicy" />
+  <remove-project name="platform/build" />
+
+  <!-- Phoenix Repositories -->
+  <project path="build/make" name="platform_build" groups="pdk" remote="github/PhoenixAOSP" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="external/json-c" name="platform_external_json-c" groups="pdk" remote="github/PhoenixAOSP" />
+  <project path="vendor/phoenix" name="platform_vendor_phoenix" groups="vendor" remote="github/PhoenixAOSP" />
+
+</manifest>
