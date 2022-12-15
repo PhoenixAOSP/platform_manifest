@@ -51,6 +51,7 @@
   <remove-project name="device/google/sunfish-kernel" />
   <remove-project name="device/google/sunfish-sepolicy" />
   <remove-project name="platform/build" />
+  <remove-project name="platform/frameworks/base" />
 
   <!-- Phoenix Repositories -->
   <project path="build/make" name="platform_build" groups="pdk" remote="github/PhoenixAOSP" >
@@ -63,6 +64,7 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
   <project path="external/json-c" name="platform_external_json-c" groups="pdk" remote="github/PhoenixAOSP" />
+  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="github/PhoenixAOSP" />
   <project path="vendor/phoenix" name="platform_vendor_phoenix" groups="vendor" remote="github/PhoenixAOSP" />
 
 </manifest>
