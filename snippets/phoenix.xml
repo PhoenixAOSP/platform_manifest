@@ -57,6 +57,7 @@
   <remove-project name="platform/hardware/qcom/sm8150/display" />
   <remove-project name="platform/hardware/qcom/sm8150/media" />
   <remove-project name="platform/build" />
+  <remove-project name="platform/bootable/recovery" />
   <remove-project name="platform/frameworks/base" />
 
   <!-- Phoenix Repositories -->
@@ -69,6 +70,7 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
+  <project path="bootable/recovery" name="platform_bootable_recovery" groups="pdk" remote="github/PhoenixAOSP" />
   <project path="external/json-c" name="platform_external_json-c" groups="pdk" remote="github/PhoenixAOSP" />
   <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="github/PhoenixAOSP" />
   <project path="hardware/qcom-caf/common" name="platform_hardware_qcom-caf_common" groups="qcom,pdk-qcom" remote="github/PhoenixAOSP" >
