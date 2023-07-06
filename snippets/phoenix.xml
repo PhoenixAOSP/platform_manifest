@@ -67,6 +67,7 @@
   <remove-project name="platform/hardware/libhardware" />
   <remove-project name="platform/hardware/qcom/sm8150/display" />
   <remove-project name="platform/hardware/qcom/sm8150/media" />
+  <remove-project name="platform/art" />
   <remove-project name="platform/bionic" />
   <remove-project name="platform/build" />
   <remove-project name="platform/bootable/recovery" />
@@ -83,6 +84,7 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
+  <project path="art" name="platform_art" groups="pdk" remote="github/PhoenixAOSP" />
   <project path="bionic" name="platform_bionic" groups="pdk" remote="github/PhoenixAOSP" />
   <project path="bootable/recovery" name="platform_bootable_recovery" groups="pdk" remote="github/PhoenixAOSP" />
   <project path="external/iproute2" name="platform_external_iproute2" groups="pdk" remote="github/PhoenixAOSP" />
