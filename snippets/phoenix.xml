@@ -78,6 +78,7 @@
   <remove-project name="platform/build" />
   <remove-project name="platform/bootable/recovery" />
   <remove-project name="platform/frameworks/base" />
+  <remove-project name="platform/frameworks/opt/telephony" />
   <remove-project name="platform/system/core" />
 
   <!-- Phoenix Repositories -->
@@ -96,6 +97,7 @@
   <project path="external/iproute2" name="platform_external_iproute2" groups="pdk" remote="github/PhoenixAOSP" />
   <project path="external/json-c" name="platform_external_json-c" groups="pdk" remote="github/PhoenixAOSP" />
   <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="github/PhoenixAOSP" />
+  <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" groups="pdk" remote="github/PhoenixAOSP" />
   <project path="hardware/libhardware" name="platform_hardware_libhardware" groups="pdk" remote="github/PhoenixAOSP" />
   <project path="hardware/qcom-caf/common" name="platform_hardware_qcom-caf_common" groups="qcom,pdk-qcom" remote="github/PhoenixAOSP" >
     <!-- add guard for AOSP hardware/qcom dir -->
